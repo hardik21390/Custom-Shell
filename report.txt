@@ -1,0 +1,93 @@
+CAT:
+    This command prints out the content of file
+Demo/TestCase:
+    shell> cat <filename>
+Modes:
+    shell> cat <filename> -E => this prints out an '&' symbol at the begining of each line
+    shell> cat <filename> -n => this prints out the line number at the begining of each line
+ErrorHandling:
+    1. If file doesn't exist, it throws an error.
+    2. It throws an error if arguments are not passed correctly
+
+
+DATE:
+    Date command is used to display the system date and time
+Demo/TestCase:
+    shell>> date
+Modes:
+    shell>> date -I =>displays the system date and time in the form yyyy-mm-dd
+    shell>> date -R =>displays the system date and time with the time zone
+ErrorHandling:
+    1. If more than 2 arguments are passed it throws an error
+    2. If wrong arguments are passed it throws an error
+
+
+LS:
+    ls contains lists of directory contents of files and directories
+Demo/TestCase:
+    shell>> ls
+Modes:
+    shell>> ls -1 =>It prints the contents of files and directories in vertical form
+    shell>> ls -m =>It prints the contents of files and directories seperatedd by comma
+ErrorHandling:
+    1. If more than 2 arguments are passed it throws an error
+    2. If wrong arguments are passed it throws an error
+    
+
+MKDIR:
+    mkdir command in Linux allows the user to create directories.
+Demo/TestCase:
+    shell>> mkdir <directory name>
+Modes:
+    shell>> mkdir -v <directory name> =>It displays a message for every directory created.
+    shell>> mkdir -m <directory name> =>-m option makes the command ask the user for confirmation before directory is created.
+ErrorHandling:
+    1. If the directory already exists it throws an error
+    2. If the direcory name is not passed it throws an error 
+
+
+RM:
+    rm command is used to remove files from the file system 
+Demo/TestCase:
+    shell>> rm <filename>
+Modes:
+    shell>> rm -i <filename> => -i option makes the command ask the user for confirmation before removing each file
+    shell>> rm -v <filename> => -v option gives verbal confirmation after deleting the file
+ErrorHandling:
+    1. It throws an error if the entered filename is a direcory
+    2. It throws an error if it is unable to delete the file
+    3. It throws an error if the filename is not entered
+
+
+CD:
+    cd command is known as change directory command.
+Demo/TestCase:
+    shell>> cd <direcory name>
+Modes:
+    shell>> cd .. => this command is used to move to the parent directory of current directory
+    shell>> cd /  => this command is used to change directory to the root directory
+ErrorHandling:
+    1. It throws an error if directory is not found.
+    2. It throws an error if directory name is not passed.
+
+
+PWD:
+    It prints the path of the working directory
+Demo/TestCase:
+    shell>> pwd
+Modes:
+    shell>> pwd -L => show working directory
+    shell>> pwd -P => show enviroment variable
+ErrorHandling:
+    1. If wrong command(improper syntax) is written it throws an error
+
+
+ECHO:
+    This command is used to display line of text/string that are passed as an argument.
+
+Demo/TestCase:
+    shell>>> echo <text>
+
+Modes:
+    shell>>> echo * => this command will print all files/folders
+    shell>>> echo -n <text> => this option is used to omit echoing trailing newline.
